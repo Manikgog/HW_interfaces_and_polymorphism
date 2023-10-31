@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Vehicle[] arrVehicles = new Vehicle[]{
+        Transport[] arrTransports = new Transport[]{
             new Car("car1", 4),
             new Car("car", 4),
             new Truck("truck", 4),
@@ -8,10 +8,10 @@ public class Main {
             new Bicycle("bicycle", 2),
             new Bicycle("bicycle2", 2),
         };
-
-        for (Vehicle v : arrVehicles) {
+        ServiceStation serviceStation = new ServiceStation();
+        for (Transport t : arrTransports) {
             System.out.println("**************************************");
-            v.check();
+            serviceStation.check(t);
         }
     }
 }

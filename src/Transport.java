@@ -1,10 +1,8 @@
-public abstract class Vehicle {
+public abstract class Transport {
     private String modelName;
     private int wheelsCount;
 
-    public Vehicle(){
-    }
-    public Vehicle(String modelName, int wheelsCount){
+    public Transport(String modelName, int wheelsCount){
        this.modelName = modelName;
        this.wheelsCount = wheelsCount;
     }

@@ -1,8 +1,6 @@
-public interface ServiceStation {
-    default void updateTyre(Vehicle vehicle){
-        for (int i = 0; i < vehicle.getWheelsCount(); i++) {
-            System.out.println("Меняем покрышку");
-        }
+public class ServiceStation {
+    void check(Transport transport){
+        System.out.println("Обслуживаем " + transport.getModelName());
+        transport.check();
     }
-    void check(Vehicle vehicle);
 }
